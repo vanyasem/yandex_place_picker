@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:yandexplacepicker/yandexplacepicker.dart';
+import 'package:yandex_placepicker/yandexplacepicker.dart';
 
 void main() => runApp(MyApp());
 
