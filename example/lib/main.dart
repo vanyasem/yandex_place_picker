@@ -35,7 +35,9 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: RaisedButton(
             child: Text('Show Picker'.toUpperCase()),
-            onPressed: () {},
+            onPressed: () {
+              YandexPlacePicker.launchPicker();
+            },
           ),
         ),
       ),

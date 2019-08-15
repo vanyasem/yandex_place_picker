@@ -6,8 +6,8 @@ class YandexPlacePicker {
   static const MethodChannel _channel =
       const MethodChannel('yandexplacepicker');
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+  static dynamic get launchPicker async {
+    final dynamic result = await _channel.invokeMethod('launch_picker');
+    return result;
   }
 }
