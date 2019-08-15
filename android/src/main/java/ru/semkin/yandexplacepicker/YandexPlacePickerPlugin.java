@@ -6,12 +6,12 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
-/** YandexplacepickerPlugin */
-public class YandexplacepickerPlugin implements MethodCallHandler {
+/** YandexPlacePickerPlugin */
+public class YandexPlacePickerPlugin implements MethodCallHandler {
   /** Plugin registration. */
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "yandexplacepicker");
-    channel.setMethodCallHandler(new YandexplacepickerPlugin());
+    channel.setMethodCallHandler(new YandexPlacePickerPlugin());
   }
 
   @Override

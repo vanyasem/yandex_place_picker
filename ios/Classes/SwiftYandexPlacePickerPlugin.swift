@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class SwiftYandexplacepickerPlugin: NSObject, FlutterPlugin {
+public class SwiftYandexPlacePickerPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "yandexplacepicker", binaryMessenger: registrar.messenger())
-    let instance = SwiftYandexplacepickerPlugin()
+    let instance = SwiftYandexPlacePickerPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
