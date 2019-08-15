@@ -1,5 +1,5 @@
 #import "YandexPlacePickerPlugin.h"
-#import <yandexplacepicker/yandexplacepicker-Swift.h>
+#import <yandex_place_picker/yandex_place_picker-Swift.h>
 
 @implementation YandexPlacePickerPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
