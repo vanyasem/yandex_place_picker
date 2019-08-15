@@ -1,8 +1,8 @@
 name: yandex_placepicker
-description: (Flutter) Place Picker utilising Yandex MapKit
+description: Place Picker utilising Yandex MapKit
 version: 0.0.1
-author:
-homepage:
+author: Ivan Semkin <ivan@semkin.ru>
+homepage: https://github.com/vanyasem/yandex_place_picker
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
