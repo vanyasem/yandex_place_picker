@@ -1,5 +1,5 @@
 name: yandexplacepicker_example
-description: Demonstrates how to use the yandexplacepicker plugin.
+description: Demonstrates how to use the yandex_place_picker plugin.
 publish_to: 'none'
 
 environment:
@@ -13,7 +13,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
-  yandex_placepicker:
+  yandex_place_picker:
     path: ../
 
 # For information on the generic Dart part of this file, see the
