@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class Yandexplacepicker {
+class YandexPlacePicker {
   static const MethodChannel _channel =
       const MethodChannel('yandexplacepicker');
 
