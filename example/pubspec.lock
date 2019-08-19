@@ -46,6 +46,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.8"
+  yandex_mapkit:
+    dependency: transitive
+    description:
+      name: yandex_mapkit
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.2"
   yandex_place_picker:
     dependency: "direct main"
     description:
