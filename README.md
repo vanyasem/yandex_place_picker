@@ -13,9 +13,10 @@ There is a capability to utilize icons, but Google's icon names differ from Yand
 
 ## Download
 
-Add the dependency
+Add the dependency to pubspec.yaml file
 
-	//TODO
+	dependencies:
+      yandex_place_picker: ^0.1.0
 
 ## Hands on
 
