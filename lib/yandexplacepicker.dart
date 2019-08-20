@@ -1,36 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:yandex_mapkit/yandex_mapkit.dart';
 
-import 'assets.dart';
+import 'src/picker_screen.dart';
+import 'src/place.dart';
 
-class YandexPlacePicker extends StatefulWidget {
+export 'src/place.dart';
 
-  @override
-  _YandexPlacePickerState createState() => _YandexPlacePickerState();
-}
+class YandexPlacePicker {
 
-class _YandexPlacePickerState extends State<YandexPlacePicker> {
-  YandexMapController _yandexMapController;
-  static const Point _point = Point(latitude: 59.945933, longitude: 30.320045);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Expanded(
-          child:
-          YandexMap(
-            onMapCreated: (YandexMapController controller) async {
-              _yandexMapController = controller;
-              await _yandexMapController.showUserLayer(iconName: ImageAssets.icLocationGreen);
-              await _yandexMapController.move(
-                  point: _point,
-                  animation: const MapAnimation(smooth: true, duration: 2.0)
-              );
-            },
-          ),
-        ),
-      ],
+  static Future<Place> selectPlace(BuildContext context) async {
+    return Navigator.push(
+      context,
+      MaterialPageRoute<Place>(builder: (BuildContext context) => PickerScreen()),
     );
   }
 }

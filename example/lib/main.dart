@@ -10,33 +10,34 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final YandexPlacePicker _yandexPlacePicker = YandexPlacePicker();
   Place _place;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Yandex Place Picker'),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              RaisedButton(
-                child: Text('Show Picker'.toUpperCase()),
-                onPressed: () async {
-                  Place place = await YandexPlacePicker.selectPlace();
-                  setState(() {
-                    _place = place;
-                  });
-                },
-              ),
-              Text(
-                _place == null ? 'No place selected.' : _place.toString(),
-              ),
-            ],
+      home: Builder(
+        builder: (BuildContext context) => Scaffold(
+          appBar: AppBar(
+            title: const Text('Yandex Place Picker'),
+          ),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                RaisedButton(
+                  child: Text('Show Picker'.toUpperCase()),
+                  onPressed: () async {
+                    final Place place = await YandexPlacePicker.selectPlace(context);
+                    setState(() {
+                      _place = place;
+                    });
+                  },
+                ),
+                Text(
+                  _place == null ? 'No place selected.' : _place.toString(),
+                ),
+              ],
+            ),
           ),
         ),
       ),
