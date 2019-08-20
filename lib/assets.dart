@@ -1,3 +1,3 @@
 class ImageAssets {
-  static const String icLocationGreen = 'assets/ic_location_green.png';
+  static const String userLocation = 'assets/user_location.png';
 }

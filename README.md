@@ -79,11 +79,17 @@ public class MainActivity extends FlutterActivity {
 
 Check the [sample](https://github.com/vanyasem/yandex_place_picker/tree/master/example) project for a full working example.
 
-//TODO
+### Usage
+
+```dart
+import 'package:yandex_place_picker/yandexplacepicker.dart';
+…
+final Place place = await YandexPlacePicker.selectPlace(context);
+```
 
 ## Configuration
 
-You can alter the behavior of the picker by //TODO
+You can alter the behavior of the picker by // TODO: Implement configuration
 
 ## License
 
