@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:yandex_place_picker/yandexplacepicker.dart';
 
+import 'theme/style.dart' as style;
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -15,6 +17,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: style.pickerTheme(),
       home: Builder(
         builder: (BuildContext context) => Scaffold(
           appBar: AppBar(
@@ -25,7 +28,7 @@ class _MyAppState extends State<MyApp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 RaisedButton(
-                  child: Text('Show Picker'.toUpperCase()),
+                  child: const Text('SHOW PICKER'),
                   onPressed: () async {
                     final Place place = await YandexPlacePicker.selectPlace(context);
                     setState(() {

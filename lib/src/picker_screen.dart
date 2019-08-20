@@ -22,26 +22,26 @@ class _PickerScreenState extends State<PickerScreen> {
     return Stack(
       children: <Widget>[
         Column(
-          children: <Widget>[
-            Expanded(
-              child:
-              YandexMap(
-                onMapCreated: (YandexMapController controller) async {
-                  _yandexMapController = controller;
-                  await _yandexMapController.showUserLayer(iconName: ImageAssets.userLocation);
-                  await _yandexMapController.move(
-                      point: _point,
-                      animation: const MapAnimation(smooth: true, duration: 2.0)
-                  );
-                },
+            children: <Widget>[
+              Expanded(
+                child:
+                YandexMap(
+                  onMapCreated: (YandexMapController controller) async {
+                    _yandexMapController = controller;
+                    await _yandexMapController.showUserLayer(iconName: ImageAssets.userLocation);
+                    await _yandexMapController.move(
+                        point: _point,
+                        animation: const MapAnimation(smooth: true, duration: 2.0)
+                    );
+                  },
+                ),
               ),
-            ),
-          ]
+            ]
         ),
         FloatingSearchBar(),
         FloatingActionButton(
           onPressed: () {
-            confirm_dialog.showConfirmationDialog(context);
+            confirm_dialog.showConfirmationDialog(this.context);
           },
           child: Icon(Icons.add),
         ),
