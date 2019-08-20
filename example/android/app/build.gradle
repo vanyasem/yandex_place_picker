@@ -53,5 +53,5 @@ flutter {
 }
 
 dependencies {
-
+    implementation 'com.yandex.android:mapkit:3.4.0'
 }

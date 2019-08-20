@@ -22,6 +22,61 @@ Add the dependency to pubspec.yaml file
 
 Sign up for MapKit API keys - [How to](https://tech.yandex.com/maps/mapkit/doc/3.x/concepts/android/quickstart-docpage/#quickstart__key)
 
+Follow the [configuration instructions](https://github.com/Unact/yandex_mapkit#getting-started) for `yandex_mapkit`:
+
+### Initializing for IOS
+1. Add `import YandexMapKit` to `ios/Runner/AppDelegate.swift`
+2. Add `YMKMapKit.setApiKey("YOUR_API_KEY")` inside `func application` in `ios/Runner/AppDelegate.swift`
+3. Specify your API key in the application delegate `ios/Runner/AppDelegate.swift`
+
+`ios/Runner/AppDelegate.swift`:
+```swift
+import UIKit
+import Flutter
+import YandexMapKit
+
+@UIApplicationMain
+@objc class AppDelegate: FlutterAppDelegate {
+  override func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
+  ) -> Bool {
+    YMKMapKit.setApiKey("YOUR_API_KEY")
+    GeneratedPluginRegistrant.register(with: self)
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+```
+
+### Initializing for Android
+1. Add dependency `implementation 'com.yandex.android:mapkit:3.4.0'` to `android/app/build.gradle`
+2. Add `import com.yandex.mapkit.MapKitFactory;` to `android/app/src/main/.../MainActivity.java`
+3. Add `MapKitFactory.setApiKey("YOUR_API_KEY");` inside method `onCreate` in `android/app/src/main/.../MainActivity.java`
+4. Specify your API key in the application delegate `android/app/src/main/.../MainActivity.java`
+
+`android/app/build.gradle`:
+```groovy
+dependencies {
+    …
+    implementation 'com.yandex.android:mapkit:3.4.0'
+}
+```
+
+`android/app/src/main/.../MainActivity.java`:
+```java
+import io.flutter.app.FlutterActivity;
+import io.flutter.plugins.GeneratedPluginRegistrant;
+import com.yandex.mapkit.MapKitFactory;
+
+public class MainActivity extends FlutterActivity {
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    MapKitFactory.setApiKey("YOUR_API_KEY");
+    GeneratedPluginRegistrant.registerWith(this);
+  }
+}
+```
+
 Check the [sample](https://github.com/vanyasem/yandex_place_picker/tree/master/example) project for a full working example.
 
 //TODO
