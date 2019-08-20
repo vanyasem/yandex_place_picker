@@ -5,6 +5,7 @@ import 'package:yandex_place_picker/assets.dart';
 
 import 'components/floating_pin.dart';
 import 'components/floating_search_bar.dart';
+import 'confirm_place_dialog.dart' as confirm_dialog;
 
 class PickerScreen extends StatefulWidget {
 
@@ -39,7 +40,9 @@ class _PickerScreenState extends State<PickerScreen> {
         ),
         FloatingSearchBar(),
         FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            confirm_dialog.showConfirmationDialog(context);
+          },
           child: Icon(Icons.add),
         ),
         FloatingPin(),
