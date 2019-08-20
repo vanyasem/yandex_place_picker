@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:yandex_place_picker/assets.dart';
 
-class FloatingPin extends StatelessWidget {
+class FloatingSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -13,4 +13,5 @@ class FloatingPin extends StatelessWidget {
       ),
     );
   }
+
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'src/models/place.dart';
 import 'src/picker_screen.dart';
-import 'src/place.dart';
 
-export 'src/place.dart';
+export 'src/models/place.dart';
 
 class YandexPlacePicker {
 

@@ -4,6 +4,7 @@ import 'package:yandex_mapkit/yandex_mapkit.dart';
 import 'package:yandex_place_picker/assets.dart';
 
 import 'components/floating_pin.dart';
+import 'components/floating_search_bar.dart';
 
 class PickerScreen extends StatefulWidget {
 
@@ -35,6 +36,11 @@ class _PickerScreenState extends State<PickerScreen> {
               ),
             ),
           ]
+        ),
+        FloatingSearchBar(),
+        FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
         ),
         FloatingPin(),
       ],
