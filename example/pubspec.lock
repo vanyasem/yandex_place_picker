@@ -222,9 +222,11 @@ packages:
   yandex_mapkit:
     dependency: transitive
     description:
-      name: yandex_mapkit
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: "279cc60fa1d4fc379eafe45522753f5f39299054"
+      url: "https://github.com/vanyasem/yandex_mapkit"
+    source: git
     version: "0.3.2"
   yandex_place_picker:
     dependency: "direct main"
