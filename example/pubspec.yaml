@@ -12,6 +12,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  permission_handler: ^3.2.2
+
   yandex_place_picker:
     path: ../
 
