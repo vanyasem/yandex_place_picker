@@ -43,7 +43,7 @@ class _PickerScreenState extends State<PickerScreen> {
           onPressed: () {
             confirm_dialog.showConfirmationDialog(this.context);
           },
-          child: Icon(Icons.add),
+          child: Icon(Icons.gps_fixed),
         ),
         FloatingPin(),
       ],
