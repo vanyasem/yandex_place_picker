@@ -1,6 +1,6 @@
 {
   "@@locale": "ru",
-  "@@last_modified": "2019-08-21T06:32:26.498207",
+  "@@last_modified": "2019-08-21T17:02:35.809272",
   "pickerSearchThis": "Искать здесь",
   "@pickerSearchThis": {
     "description": "A button to search current selection on the map shown when auto-search is off",
@@ -46,6 +46,12 @@
   "pickerSelectThis": "ВЫБРАТЬ",
   "@pickerSelectThis": {
     "description": "A button that select a local business from the list",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerSearch": "Искать",
+  "@pickerSearch": {
+    "description": "Hint written on the search textfield",
     "type": "text",
     "placeholders": {}
   },

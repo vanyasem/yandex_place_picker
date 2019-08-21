@@ -89,6 +89,11 @@ class PickerLocalizations {
     name: 'pickerSelectThis',
     desc: 'A button that select a local business from the list',
   );
+  String get pickerSearch => Intl.message(
+    'Search',
+    name: 'pickerSearch',
+    desc: 'Hint written on the search textfield',
+  );
 
   // Errors:
   String get errorMessageNetwork => Intl.message(

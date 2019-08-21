@@ -6,6 +6,7 @@ import 'package:yandex_place_picker/assets.dart';
 import 'components/floating_pin.dart';
 import 'components/floating_search_bar.dart';
 import 'confirm_place_dialog.dart' as confirm_dialog;
+import 'lang/picker_localizations.dart';
 
 class PickerScreen extends StatefulWidget {
 
@@ -19,34 +20,46 @@ class _PickerScreenState extends State<PickerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        Column(
+    return FutureBuilder<PickerLocalizations>(
+      future: PickerLocalizations.load(context),
+      builder: (BuildContext context, AsyncSnapshot<PickerLocalizations> snapshot) {
+        if (!snapshot.hasData) {
+          return Center(
+            child: Container(),
+          );
+        } else {
+          final PickerLocalizations pickerLocalizations = snapshot.data;
+          return Stack(
             children: <Widget>[
-              Expanded(
-                child:
-                YandexMap(
-                  onMapCreated: (YandexMapController controller) async {
-                    _yandexMapController = controller;
-                    await _yandexMapController.showUserLayer(iconName: ImageAssets.userLocation);
-                    await _yandexMapController.move(
-                        point: _point,
-                        animation: const MapAnimation(smooth: true, duration: 2.0)
-                    );
-                  },
-                ),
+              Column(
+                  children: <Widget>[
+                    Expanded(
+                      child:
+                      YandexMap(
+                        onMapCreated: (YandexMapController controller) async {
+                          _yandexMapController = controller;
+                          await _yandexMapController.showUserLayer(iconName: ImageAssets.userLocation);
+                          await _yandexMapController.move(
+                              point: _point,
+                              animation: const MapAnimation(smooth: true, duration: 2.0)
+                          );
+                        },
+                      ),
+                    ),
+                  ]
               ),
-            ]
-        ),
-        FloatingSearchBar(),
-        FloatingActionButton(
-          onPressed: () {
-            confirm_dialog.showConfirmationDialog(this.context);
-          },
-          child: Icon(Icons.gps_fixed),
-        ),
-        FloatingPin(),
-      ],
+              FloatingSearchBar(pickerLocalizations),
+              FloatingActionButton(
+                onPressed: () {
+                  confirm_dialog.showConfirmationDialog(this.context, pickerLocalizations);
+                },
+                child: Icon(Icons.gps_fixed),
+              ),
+              FloatingPin(),
+            ],
+          );
+        }
+      },
     );
   }
 }

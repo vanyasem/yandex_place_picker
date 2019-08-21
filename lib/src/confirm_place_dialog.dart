@@ -32,8 +32,7 @@ Widget _buildDialog(BuildContext context) {
   );
 }
 
-Future<void> showConfirmationDialog(BuildContext context) async {
-  final PickerLocalizations pickerLocalizations = await PickerLocalizations.load(context);
+Future<void> showConfirmationDialog(BuildContext context, PickerLocalizations pickerLocalizations) async {
   showDialog<AlertDialog>(
     context: context,
     builder: (BuildContext context) {

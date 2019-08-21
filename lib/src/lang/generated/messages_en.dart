@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "pickerOrSelectNearby" : MessageLookupByLibrary.simpleMessage("Or choose a nearby place"),
     "pickerPlaceCancel" : MessageLookupByLibrary.simpleMessage("CHANGE LOCATION"),
     "pickerPlaceConfirm" : MessageLookupByLibrary.simpleMessage("Use this place?"),
+    "pickerSearch" : MessageLookupByLibrary.simpleMessage("Search"),
     "pickerSearchThis" : MessageLookupByLibrary.simpleMessage("Search this location"),
     "pickerSelectThis" : MessageLookupByLibrary.simpleMessage("SELECT")
   };
