@@ -11,6 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  intl: ^0.15.8
+  intl_translation: ^0.17.5
+
   yandex_mapkit: ^0.3.2
 
 flutter:

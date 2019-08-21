@@ -1,0 +1,69 @@
+{
+  "@@last_modified": "2019-08-21T06:32:26.498207",
+  "pickerSearchThis": "Search this location",
+  "@pickerSearchThis": {
+    "description": "A button to search current selection on the map shown when auto-search is off",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerOrSelectNearby": "Or choose a nearby place",
+  "@pickerOrSelectNearby": {
+    "description": "A title to the list of local businesses serving as an alternative to selecting the building",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerLoadPlacesError": "Couldn't load nearby places…",
+  "@pickerLoadPlacesError": {
+    "description": "An error shown when there was an issue loading nearby businesses",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerLoadSearchResultsError": "Couldn't load search results…",
+  "@pickerLoadSearchResultsError": {
+    "description": "An error shown when there was an issue loading search results",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerPlaceConfirm": "Use this place?",
+  "@pickerPlaceConfirm": {
+    "description": "A title of the confirmation dialog",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerPlaceCancel": "CHANGE LOCATION",
+  "@pickerPlaceCancel": {
+    "description": "A cancellation button of the confirmation dialog",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerConfirmThis": "Confirm this location",
+  "@pickerConfirmThis": {
+    "description": "A button that selects the currenltly focused building",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerSelectThis": "SELECT",
+  "@pickerSelectThis": {
+    "description": "A button that select a local business from the list",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorMessageNetwork": "Network error",
+  "@errorMessageNetwork": {
+    "description": "A network error message",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorMessageRemote": "Remote server error",
+  "@errorMessageRemote": {
+    "description": "An unknown error message",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorMessageUnknown": "Unknown error",
+  "@errorMessageUnknown": {
+    "description": "A remote server error message",
+    "type": "text",
+    "placeholders": {}
+  }
+}

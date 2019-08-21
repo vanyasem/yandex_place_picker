@@ -1,0 +1,70 @@
+{
+  "@@locale": "ru",
+  "@@last_modified": "2019-08-21T06:32:26.498207",
+  "pickerSearchThis": "Искать здесь",
+  "@pickerSearchThis": {
+    "description": "A button to search current selection on the map shown when auto-search is off",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerOrSelectNearby": "Или выберите бизнес поблизости",
+  "@pickerOrSelectNearby": {
+    "description": "A title to the list of local businesses serving as an alternative to selecting the building",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerLoadPlacesError": "Не удалось загрузить места поблизости…",
+  "@pickerLoadPlacesError": {
+    "description": "An error shown when there was an issue loading nearby businesses",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerLoadSearchResultsError": "Не удалось загрузить результаты поиска…",
+  "@pickerLoadSearchResultsError": {
+    "description": "An error shown when there was an issue loading search results",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerPlaceConfirm": "Использовать это место?",
+  "@pickerPlaceConfirm": {
+    "description": "A title of the confirmation dialog",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerPlaceCancel": "ИЗМЕНИТЬ",
+  "@pickerPlaceCancel": {
+    "description": "A cancellation button of the confirmation dialog",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerConfirmThis": "Подтвердить",
+  "@pickerConfirmThis": {
+    "description": "A button that selects the currenltly focused building",
+    "type": "text",
+    "placeholders": {}
+  },
+  "pickerSelectThis": "ВЫБРАТЬ",
+  "@pickerSelectThis": {
+    "description": "A button that select a local business from the list",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorMessageNetwork": "Сетевая ошибка",
+  "@errorMessageNetwork": {
+    "description": "A network error message",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorMessageRemote": "Ошибка сервера",
+  "@errorMessageRemote": {
+    "description": "An unknown error message",
+    "type": "text",
+    "placeholders": {}
+  },
+  "errorMessageUnknown": "Неизвестная ошибка",
+  "@errorMessageUnknown": {
+    "description": "A remote server error message",
+    "type": "text",
+    "placeholders": {}
+  }
+}

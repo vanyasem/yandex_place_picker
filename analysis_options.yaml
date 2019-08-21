@@ -26,8 +26,7 @@ analyzer:
     sdk_version_async_exported_from_core: ignore
   exclude:
     - "bin/cache/**"
-    - "lib/lang/generated/messages_*.dart"
-    - "lib/models/generated/*.dart"
+    - "lib/src/lang/generated/messages_*.dart"
 
 linter:
   rules:

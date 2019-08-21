@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'lang/picker_localizations.dart';
+
 Widget _buildDialog(BuildContext context) {
   const String url =
     'https://static-maps.yandex.ru/1.x/'
@@ -30,23 +32,24 @@ Widget _buildDialog(BuildContext context) {
   );
 }
 
-void showConfirmationDialog(BuildContext context) {
+Future<void> showConfirmationDialog(BuildContext context) async {
+  final PickerLocalizations pickerLocalizations = await PickerLocalizations.load(context);
   showDialog<AlertDialog>(
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
-        title: const Text('Use this place?'), // TODO: Internalize
+        title: Text(pickerLocalizations.pickerPlaceConfirm),
         content: _buildDialog(context),
         contentPadding: const EdgeInsets.fromLTRB(24.0, 16.0, 24.0, 0),
         actions: <Widget>[
           FlatButton(
-            child: const Text('CHANGE LOCATION'),
+            child: Text(pickerLocalizations.pickerPlaceCancel),
             onPressed: () {
               Navigator.of(context).pop();
             },
           ),
           FlatButton(
-            child: const Text('OK'),
+            child: const Text('OK'), // TODO: Internalize
             onPressed: () {
               Navigator.of(context).pop();
             },

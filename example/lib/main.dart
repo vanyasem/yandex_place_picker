@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:yandex_place_picker/yandexplacepicker.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'theme/style.dart' as style;
 
@@ -18,6 +19,15 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: style.pickerTheme(),
+      localizationsDelegates: <LocalizationsDelegate<dynamic>>[
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const <Locale>[
+        Locale('en'), // English
+        Locale('ru'), // Russian
+      ],
       home: Builder(
         builder: (BuildContext context) => Scaffold(
           appBar: AppBar(
