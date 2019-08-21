@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:yandex_mapkit/yandex_mapkit.dart';
 import 'package:yandex_place_picker/assets.dart';
 
+import 'components/floating_panel.dart';
 import 'components/floating_pin.dart';
 import 'components/floating_search_bar.dart';
 import 'confirm_place_dialog.dart' as confirm_dialog;
@@ -48,14 +49,15 @@ class _PickerScreenState extends State<PickerScreen> {
                     ),
                   ]
               ),
-              FloatingSearchBar(pickerLocalizations),
+              FloatingPin(),
               FloatingActionButton(
                 onPressed: () {
                   confirm_dialog.showConfirmationDialog(this.context, pickerLocalizations);
                 },
                 child: Icon(Icons.gps_fixed),
               ),
-              FloatingPin(),
+              FloatingPanel(),
+              FloatingSearchBar(pickerLocalizations),
             ],
           );
         }
