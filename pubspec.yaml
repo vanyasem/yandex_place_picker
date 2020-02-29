@@ -1,6 +1,6 @@
 name: yandex_place_picker
 description: Place Picker utilising Yandex MapKit
-version: 0.0.1
+version: 0.0.2
 author: Ivan Semkin <ivan@semkin.ru>
 homepage: https://github.com/vanyasem/yandex_place_picker
 
@@ -11,13 +11,12 @@ dependencies:
   flutter:
     sdk: flutter
 
-  intl: ^0.15.8
-  intl_translation: ^0.17.5
+  intl: ^0.16.1
+  intl_translation: ^0.17.9
 
-  sliding_up_panel: ^0.3.4
-  yandex_mapkit:
-    git:
-      url: https://github.com/vanyasem/yandex_mapkit
+  sliding_up_panel: ^1.0.0
+  yandex_mapkit: ^0.3.6
+
 
 flutter:
   uses-material-design: true
